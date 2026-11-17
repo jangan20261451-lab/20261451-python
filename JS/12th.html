@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>Adding Events</h2>
+
+<div id="box"
+style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+Move mouse over this box!
+</div>
+
+<script>
+const box = document.getElementById("box");
+
+// Let box listen for mouseover
+box.addEventListener("mouseover", function () {
+  box.innerHTML = "마우스가 들어왔습니다!";
+});
+
+// Let box listen for mouseout
+box.addEventListener("mouseout", function () {
+  box.innerHTML = "마우스가 나갔습니다!";
+});
+box.addEventListener("click", function () {
+  box.innerHTML = "클릭되었습니다!";
+});
+box.addEventListener("dblclick", function () {
+  box.innerHTML = "더블클릭되었습니다!";
+});
+</script>
+</body>
+</html>
